@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   const throttledSaveCurrentTime = throttle(saveCurrentTime, 1000);
-
   player.on('timeupdate', () => {
     throttledSaveCurrentTime();
   });
