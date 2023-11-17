@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const getStoredTime = () => {
     const storedTime = localStorage.getItem(storageKey);
-    return; /* storedTime ? parseFloat(storedTime) : 0; */
+    return storedTime ? parseFloat(storedTime) : 0;
   };
 
   const saveCurrentTime = () => {
