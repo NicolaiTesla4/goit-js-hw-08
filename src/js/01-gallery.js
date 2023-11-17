@@ -25,8 +25,6 @@ function createGalleryMarkup(items) {
     .join('');
 }
 
-console.log(galleryItems);
-
 const gallery = document.querySelector('.gallery');
 
 gallery.innerHTML = createGalleryMarkup(galleryItems);
